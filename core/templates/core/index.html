@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Campus
+        </title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'core/css/home.css' %}">
+        <script src="{% static 'core/js/home.js' %}" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script>
+            const artifacts = JSON.parse('{{artifacts | safe}}');
+            console.log(artifacts);
+        </script>
+    </head>
+    <body> 
+        <p id='text'>
+            Hello There.
+        </p>
+        <div id="scene-box">
+
+        </div>
+    </body>
+</html> 
